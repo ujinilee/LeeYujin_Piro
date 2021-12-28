@@ -1,6 +1,16 @@
 /* 선택자(selector): HTML 태그 선택 */
 
 /* id-> div#아이디명{} */
+.blind{
+
+    position:absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+
+}
 
 div#header-center{
     margin:0 auto; 
