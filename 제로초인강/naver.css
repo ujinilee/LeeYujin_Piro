@@ -1,0 +1,12 @@
+/* 선택자(selector): HTML 태그 선택 */
+
+/* id-> div#아이디명{} */
+div#header-center, div#zerocho{
+    margin:0 auto; 
+    width: 1080px;
+}
+
+/* 
+,(콤마)로 여러태그에 적용가능
+div 생략 가능
+*/

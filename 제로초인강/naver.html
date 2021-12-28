@@ -6,26 +6,34 @@
         <title>네이버</title>
         <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
         <!--href : 파일의 경로, ./:현재폴더-->
+        <link rel="stylesheet" href="./naver.css">
+        <!--css파일과 연결-->
+        <!--rel이 역할 구분-->
+        <!--html 파일이 아이콘, css파일 등을 불러올 수 있어야 한다.-->
     </head>
     <body>
         <header>
-            <h1>
-                <a href="https://www.naver.com">네이버</a>
-                <!-- attribute 어떤 태그에 대한 부가정보-->
-                <!--주석(comment)입니다, 속성(attribute)입니다-->
-            </h1>
-            <h2>검색창</h2>
-            <fieldset>
-                <legend>검색</legend>
-                <input /> <!-- input이 보통 컨텐츠가 없음-->
-                <button>검색</button>
-                <!-- 버튼 기본은 손바닥 모양 X(기본동작이 화살표)-->
-                <input type="checkbox" />
-                <input type="radio" name="group" />
-                <input type="radio" name="group" />
-                <!--checkbox는 여러개 중복 선택 및 취소 가능, radio는 양자택일 or 다중택일-->
-                <!-- textarea는 긴 글을 쓸 때-->
-            </fieldset>
+            <div id="header-center"> <!--가운데 정렬용 div-->
+                <!--속성명:속성값, 속성이 여러개일때는 ;(세미콜론)으로 구분-->
+                <!--css 파일을 안만들고 하는 것 -> 인라인 스타일-->
+                <h1>
+                    <a href="https://www.naver.com">네이버</a>
+                    <!-- attribute 어떤 태그에 대한 부가정보-->
+                    <!--주석(comment)입니다, 속성(attribute)입니다-->
+                </h1>
+                <h2>검색창</h2>
+                <fieldset>
+                    <legend>검색</legend>
+                    <input /> <!-- input이 보통 컨텐츠가 없음-->
+                    <button>검색</button>
+                    <!-- 버튼 기본은 손바닥 모양 X(기본동작이 화살표)-->
+                    <input type="checkbox" />
+                    <input type="radio" name="group" />
+                    <input type="radio" name="group" />
+                    <!--checkbox는 여러개 중복 선택 및 취소 가능, radio는 양자택일 or 다중택일-->
+                    <!-- textarea는 긴 글을 쓸 때-->
+                </fieldset>
+            </div>
         </header>
 
         <nav>
