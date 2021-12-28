@@ -1,12 +1,36 @@
 /* 선택자(selector): HTML 태그 선택 */
 
 /* id-> div#아이디명{} */
-div#header-center, div#zerocho{
+
+div#header-center{
     margin:0 auto; 
     width: 1080px;
 }
 
+div#header-search > h1{
+    width:280px;
+    display: inline-block;
+}
+
+div#header-search h2{
+    display: none;
+}
+
+div#header-search fieldset{
+    width:520px;
+    display: inline-block;
+}
+
+
 /* 
-,(콤마)로 여러태그에 적용가능
+,(콤마)로 여러태그에 적용가능 ex. , div#zerocho
 div 생략 가능
+px: 상대적인 길이 모니터의 가로 길이를 1080등분
+내 모니터 px가 궁금하면 console창에 screen.width, screen.height를 치면 된다.
+
+*/
+
+/*
+    자식을 선택할때 '>' 사용
+    header-center h1 // 한칸 띄워 쓰면 '자손'선택자
 */
