@@ -8,49 +8,71 @@
         <!--href : 파일의 경로, ./:현재폴더-->
     </head>
     <body>
-        <h1>
-            <a href="https://www.naver.com">네이버</a>
-            <!-- attribute 어떤 태그에 대한 부가정보-->
-            <!--주석(comment)입니다, 속성(attribute)입니다-->
-        </h1>
-        <h2>검색창</h2>
-        <fieldset>
-            <legend>검색</legend>
-            <input /> <!-- input이 보통 컨텐츠가 없음-->
-            <button>검색</button>
-            <!-- 버튼 기본은 손바닥 모양 X(기본동작이 화살표)-->
-            <input type="checkbox" />
-            <input type="radio" name="group" />
-            <input type="radio" name="group" />
-            <!--checkbox는 여러개 중복 선택 및 취소 가능, radio는 양자택일 or 다중택일-->
-            <!-- textarea는 긴 글을 쓸 때-->
-        </fieldset>
-        <ul> <!--unordered list, ol 이면 숫자 1, 2, 3, 4 .. 로 바뀜-->
-            <li>메일</li> <!-- list item-->
-            <li>카페</li>
-            <li>블로그</li>
-            <li>지식인</li>
-            <li>쇼핑</li>
-            <li>네이버페이</li>
-        </ul>
-        <h2>실시간 검색어</h2>
-        <h3>연합뉴스</h3>
-        <ol>
-            <li>충격) 제로초 지금 목 아파..</li>
-            <li>속보) 제로초 지금 목 아파..</li>
-            <li>중대발표) 제로초 지금 목 아파..</li>
-        </ol>
-        <h3>언론사 목록</h3>
-        <ul>
-            <li><img src="./연합뉴스TV.png " alt="연합뉴스TV" /></li>
-            <!--이미지 설명은 alt="" 에 -->
-            <li><img src="./osen.png " alt="osen" /></li>
-        </ul>
-        <h3>로그인</h3>
-        <h3>뉴스</h3>
-        <h3>법률</h3>
-        <h3>쇼핑</h3>
-        <h6>쇼핑</h6>
-        <!-- 크롭 웹스토어 -> headingsMap에서 h1부터 태그(키워드) 확인 가능-->
+        <header>
+            <h1>
+                <a href="https://www.naver.com">네이버</a>
+                <!-- attribute 어떤 태그에 대한 부가정보-->
+                <!--주석(comment)입니다, 속성(attribute)입니다-->
+            </h1>
+            <h2>검색창</h2>
+            <fieldset>
+                <legend>검색</legend>
+                <input /> <!-- input이 보통 컨텐츠가 없음-->
+                <button>검색</button>
+                <!-- 버튼 기본은 손바닥 모양 X(기본동작이 화살표)-->
+                <input type="checkbox" />
+                <input type="radio" name="group" />
+                <input type="radio" name="group" />
+                <!--checkbox는 여러개 중복 선택 및 취소 가능, radio는 양자택일 or 다중택일-->
+                <!-- textarea는 긴 글을 쓸 때-->
+            </fieldset>
+        </header>
+
+        <nav>
+            <ul> <!--unordered list, ol 이면 숫자 1, 2, 3, 4 .. 로 바뀜-->
+                <li>메일</li> <!-- list item-->
+                <li>카페</li>
+                <li>블로그</li>
+                <li>지식인</li>
+                <li>쇼핑</li>
+                <li>네이버페이</li>
+            </ul>
+        </nav>
+
+
+        <main>
+            <h2>실시간 검색어</h2>
+            <h3>연합뉴스</h3>
+            <ol>
+                <li>충격) 제로초 지금 목 아파..</li>
+                <li>속보) 제로초 지금 목 아파..</li>
+                <li>중대발표) 제로초 지금 목 아파..</li>
+            </ol>
+            <h3>언론사 목록</h3>
+            <ul>
+                <li><img src="./연합뉴스TV.png " alt="연합뉴스TV" /></li>
+                <!--이미지 설명은 alt="" 에 -->
+                <li><img src="./osen.png " alt="osen" /></li>
+            </ul>
+            <h3>로그인</h3>
+            <h3>뉴스</h3>
+            <h3>법률</h3>
+            <h3>쇼핑</h3>
+            <h6>쇼핑</h6>
+            <!-- 크롭 웹스토어 -> headingsMap에서 h1부터 태그(키워드) 확인 가능-->
+        </main>
+
+        <footer>
+            <div>공지사항</div>
+            <div>Creators</div>
+            <div>회사소개</div>
+
+        </footer>
+        
+        <!--div를 구별해주기 위해 id를 붙여주기도 했음-->
+        <!--요즘엔 대신 header, nav, main, footer 사용-->
+        <!--큰 부분 Header, 메뉴 나열 nav, main 컨텐츠 부분 main, 부가적인 정보들 footer-->
+        <!--어떤 구역인지 알려주기 위한 역할을 하는 div에 이름 붙은 태그가 있다.-->
+        <!--시멘트 태그는 제약 O -> validity document 라는 확장 프로그램을 쓰면 제대로 코딩을 했는지 확인 해줌-->
     </body>
 </html>
