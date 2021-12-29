@@ -86,7 +86,7 @@ div#header-search fieldset{
     outline: none;
 
     vertical-align: top;
-    width: 405px;
+    width: 395px;
     height:23px;
     /*커서 가운데로*/
 
@@ -276,3 +276,33 @@ nav{
     font-size:16px;
 
 }
+
+#search-keyboard{
+
+    background-image: url(./sp_search.png);
+    background-repeat: no-repeat;
+    background-position: -33px -60px;
+    width: 19px;
+    height: 11px;
+    display: inline-block;
+    margin: 0 6px;
+    vertical-align: middle;
+    
+}
+
+#search-history{
+
+    background-image: url(./sp_search.png);
+    background-repeat: no-repeat;
+    background-position: -87px -60px;
+    width: 9px;
+    height: 4px;
+    display: inline-block;
+    margin: 0 6px;
+    vertical-align: middle;
+
+}
+
+main h3:nth-child(3){
+    background:red;
+} /* 3번째 자식 */
