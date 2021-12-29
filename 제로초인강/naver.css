@@ -82,6 +82,30 @@ div#header-search fieldset{
 
 }
 
+#header-search fieldset button{
+    width:49px;
+    height:49px;
+    border: none;
+    padding: 0;
+    background: #03cf5d;
+
+}
+
+#search-image{
+
+    background-image: url(./sp_search.png);
+    background-position: -3px -60px;
+    background-repeat: no-repeat;
+    width:21px;
+    height:21px;
+    display: inline-block; /*display가 inline이면 가로세로 높이를 마음대로 바꿀수없다 */
+    /*가로 세로 높이를 지정해줄 수 있는 inline-block으로 지정*/
+    margin:14px; /*가운데 정렬하기 위해 마진 설정*/
+
+
+}
+
+
 
 /* 
 ,(콤마)로 여러태그에 적용가능 ex. , div#zerocho
