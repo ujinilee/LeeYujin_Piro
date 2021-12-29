@@ -226,3 +226,19 @@ nav li:nth-child(6) span:first-child{
     background-position:-70px -285px;
 
 }
+
+#header-top{
+    float: right;
+
+}
+
+#header-top span{
+    color:#888;
+    letter-spacing: -1px;
+    font-size: 11px;
+    line-height: 22px;
+}
+
+#header-search{
+    clear:both;
+} /*안겹치게 float 공간만큼 내려옴*/
