@@ -46,7 +46,6 @@
         <span id="rank-number">1</span>
         <span id="rank-title">제로초</span>
       </div>
-      
       <ul>
         <li>
           <span class="rank-number">1</span>
@@ -89,9 +88,6 @@
           <span class="rank-title">제로초</span>
         </li>
       </ul>
-      <div id="z-example">
-        <div id="z-inner"></div>
-      </div>
     </div>
     <ul id="nav-menu"> <!-- unordered list --> <!-- ol 태그도 있어요 ordered list -->
       <li>
@@ -134,12 +130,10 @@
             <span class="blind">NAVER 로그인</span>
             <span class="login-image"></span>
           </a>
-
           <a
             class="login-signup"
             href="https://nid.naver.com/nidregister.form?url=https%3A%2F%2Fwww.naver.com"
           >회원가입</a>
-
         </div>
       </div>
     </div>
@@ -182,13 +176,45 @@
     </div>
     <div id="main-third-block">
       <div id="main-category">
-        <h3>주제별 보기</h3>
+        <h3 class="blind">주제별 보기</h3>
+        <div>
+          <button id="subject-all">
+            <span class="blind">전체 주제 열기</span>
+          </button>
+          <div id="subject-list">
+            <ul>
+              <li>리빙</li>
+              <li>푸드</li>
+              <li>스포츠</li>
+              <li>자동차</li>
+              <li>패션뷰티</li>
+              <li>부모i</li>
+              <li>건강</li>
+              <li>웹툰</li>
+              <li>게임</li>
+              <li>티비</li>
+              <li>TV연예</li>
+              <li>뮤직</li>
+              <li>영화</li>
+              <li>책문화</li>
+            </ul>
+          </div>
+          <button id="subject-prev">
+            <span class="blind">이전 주제</span>
+            <span></span>
+          </button>
+          <button id="subject-next">
+            <span class="blind">다음 주제</span>
+            <span></span>
+          </button>
+        </div>
       </div>
       <div id="main-shopping">
-          <iframe src="https://castbox.shopping.naver.com/shopbox/main.nhn?" 
-          frameborder="0" 
+        <iframe
+          src="https://castbox.shopping.naver.com/shopbox/main.nhn?"
+          frameborder="0"
           scrolling="no"
-          ></iframe>
+        ></iframe>
       </div>
     </div>
     <div id="main-fourth-block">

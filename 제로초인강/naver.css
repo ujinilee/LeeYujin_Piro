@@ -12,13 +12,12 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-.float-left{
-    float:left;
-
-}
-
 .inline-block {
     display: inline-block;
+}
+
+.float-left {
+    float: left;
 }
 
 #fixed {
@@ -179,17 +178,17 @@ nav ul {
     list-style: none;
 }
 
-nav-menu li {
+#nav-menu li {
     display: inline-block;
 }
 
-nav-menu li:first-child span:first-child {
+#nav-menu li:first-child span:first-child {
     width: 25px;
     background-position: 0 -285px;
     margin-left: 0;
 }
 
-nav-menu li span:first-child {
+#nav-menu li span:first-child {
     height: 16px;
     display: inline-block;
     background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_nav.png);
@@ -197,82 +196,82 @@ nav-menu li span:first-child {
     margin-left: 10px;
 }
 
-nav-menu li:nth-child(2) span:first-child {
+#nav-menu li:nth-child(2) span:first-child {
     width: 27px;
     background-position: -279px -52px;
 }
 
-nav-menu li:nth-child(3) span:first-child {
+#nav-menu li:nth-child(3) span:first-child {
     width: 40px;
     background-position: -100px -182px;
 }
 
-nav-menu li:nth-child(4) span:first-child {
+#nav-menu li:nth-child(4) span:first-child {
     width: 40px;
     background-position: -101px -156px;
 }
 
-nav-menu li:nth-child(5) span:first-child {
+#nav-menu li:nth-child(5) span:first-child {
     width: 26px;
     background-position: -279px -156px;
 }
 
-nav-menu li:nth-child(6) span:first-child {
+#nav-menu li:nth-child(6) span:first-child {
     width: 25px;
     background-position: -70px -285px;
 }
 
-nav-menu li:nth-child(7) span:first-child {
+#nav-menu li:nth-child(7) span:first-child {
     width: 35px;
     background-position: -125px -130px;
 }
 
-nav-menu li:nth-child(8) span:first-child {
+#nav-menu li:nth-child(8) span:first-child {
     width: 26px;
     background-position: -279px -208px;
 }
 
-nav-menu li:nth-child(9) span:first-child {
+#nav-menu li:nth-child(9) span:first-child {
     width: 26px;
     background-position: -128px -104px;
 }
 
-nav-menu li:nth-child(10) span:first-child {
+#nav-menu li:nth-child(10) span:first-child {
     width: 26px;
     background-position: -36px -259px;
 }
 
-nav-menu li:nth-child(11) span:first-child {
+#nav-menu li:nth-child(11) span:first-child {
     width: 39px;
     background-position: -151px -156px;
 }
 
-nav-menu li:nth-child(12) span:first-child {
+#nav-menu li:nth-child(12) span:first-child {
     width: 26px;
     background-position: -279px -130px;
 }
 
-nav-menu li:nth-child(13) span:first-child {
+#nav-menu li:nth-child(13) span:first-child {
     width: 26px;
     background-position: -234px -233px;
 }
 
-nav-menu li:nth-child(14) span:first-child {
+#nav-menu li:nth-child(14) span:first-child {
     width: 26px;
     background-position: -72px -259px;
 }
 
-nav-menu li:nth-child(15) span:first-child {
+#nav-menu li:nth-child(15) span:first-child {
     width: 13px;
     background-position: -140px -78px;
 }
 
-nav-menu li:nth-child(16) span:first-child {
+#nav-menu li:nth-child(16) span:first-child {
     width: 26px;
     background-position: -279px 0;
 }
 
-nav-menu li.more:first-child span:first-child {
+#nav-menu li.more:first-child span:first-child {
     width: 55px;
     background-position: 0 -104px;
 }
@@ -288,34 +287,32 @@ nav-menu li.more:first-child span:first-child {
 #search-ranking {
     position: absolute;
     top: 14px;
-    right: 0px;    
+    right: 0;
     width: 198px;
     height: 20px;
 }
 
-
 #search-ranking ul {
     display: none;
     list-style: none;
-    padding:17px;
-    margin:0;
+    padding: 17px;
+    margin: 0;
     width: 332px;
     height: 334px;
-    border:1px solid #eee;
-    background:white;
+    border: 1px solid #aaa;
+    background: white;
     position: absolute;
-    top:-15px;
-    right:0;
+    top: -15px;
+    right: 0;
     z-index: 100;
 }
 
-#z-example{
+#z-example {
     position: absolute;
     background: yellow;
     width: 100px;
     height: 100px;
-    z-index:1;
-
+    z-index: 1;
 }
 
 #z-inner {
@@ -326,9 +323,8 @@ nav-menu li.more:first-child span:first-child {
     z-index: 1000;
 }
 
-#search-ranking:hover ul{
-    display:inline-block;
-
+#search-ranking:hover ul {
+    display: inline-block;
 }
 
 #rank-number {
@@ -356,7 +352,7 @@ main {
 #main-first-block {
     display: inline-block;
     width: 100%;
-    vertical-align: top; /*세로는 vertical-align : top; 으로 해결*/
+    vertical-align: top;
 }
 
 #main-ad {
@@ -383,7 +379,6 @@ main {
 
 #main-login .login-wrapper a {
     display: block;
-    margin-top:12px;
 }
 
 #main-login .login-text {
@@ -412,7 +407,7 @@ main {
     text-decoration: underline;
 }
 
-#main-second-block{
+#main-second-block {
     display: inline-block;
     vertical-align: top;
     margin-bottom: 8px;
@@ -420,7 +415,7 @@ main {
 
 #main-second-block .float-left:first-child {
     width: 740px;
-    margin-right: 8px; /*최대한 부모로*/
+    margin-right: 8px;
 }
 
 #main-second-block .float-left:last-child {
@@ -433,7 +428,6 @@ main {
     width: 740px;
     height: 46px;
     background-color: white;
-    margin-right: 8px;
     margin-bottom: 8px;
 }
 
@@ -442,8 +436,6 @@ main {
     display: inline-block;
 }
 
-
-
 #main-newsstand {
     display: inline-block;
     width: 740px;
@@ -451,7 +443,6 @@ main {
     background-color: white;
     margin-right: 8px;
     vertical-align: top;
-
 }
 
 #main-newsstand h3 {
@@ -496,7 +487,6 @@ main {
     height: 150px;
     background: #555;
     vertical-align: top;
-    /*margin-bottom: 8px;*/
 }
 
 #main-category {
@@ -521,7 +511,6 @@ main {
     height: 100%;
 }
 
-
 #main-third-block,
 #main-fourth-block {
     display: inline-block;
@@ -543,4 +532,72 @@ main {
     width: 330px;
     height: 130px;
     background: #555;
+}
+
+#main-category-top {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #ebeef3;
+}
+
+#subject-list, #subject-all, #subject-prev, #subject-next {
+    float: left;
+    height: 45px;
+    padding: 0;
+}
+
+#subject-list {
+    width: 603px;
+    position: relative;
+}
+
+#subject-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#subject-list li{
+    float: left;
+}
+
+#subject-all, #subject-prev, #subject-next {
+    position: relative;
+    width: 45px;
+    border: none;
+    border-left: 1px solid #ebeef3;
+    background: white;
+}
+
+#subject-all span:last-child {
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    width: 20px;
+    height: 14px;
+    background-image: url(./sp_themecast.png);
+    background-repeat: no-repeat;
+    background-position: -218px -257px;
+}
+
+#subject-prev span:last-child {
+    position: absolute;
+    top: 15px;
+    left: 16px;
+    width: 8px;
+    height: 16px;
+    background-image: url(./sp_themecast.png);
+    background-repeat: no-repeat;
+    background-position: -320px 0;
+}
+
+#subject-next span:last-child {
+    position: absolute;
+    top: 15px;
+    left: 16px;
+    width: 8px;
+    height: 16px;
+    background-image: url(./sp_themecast.png);
+    background-repeat: no-repeat;
+    background-position: -320px -52px;
 }
