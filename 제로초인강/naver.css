@@ -23,8 +23,8 @@
 
 }
 
-.center-align{
-    margin:0 auto; 
+.center-align {
+    margin: 0 auto;
     width: 1080px;
 }
 
@@ -44,7 +44,8 @@ div#header-search h1{
 
     vertical-align: middle;
     position: relative;
-    top:-6px;
+    top:-5px;
+    left: 1px;
 }
 
 #header-search a{
@@ -60,7 +61,7 @@ div#header-search h2{
 }
 
 div#header-search fieldset{
-    margin-left: 20px;
+    margin-left: 18px;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 10px;
@@ -159,8 +160,9 @@ px: 상대적인 길이 모니터의 가로 길이를 1080등분
 */
 
 nav ul{
+    display:inline-block;
     margin:0;
-    padding:0;
+    padding:16px 0 0 4px;
     list-style:none;
 }
 
@@ -241,4 +243,36 @@ nav li:nth-child(6) span:first-child{
 
 #header-search{
     clear:both;
+    padding-top: 20px;
 } /*안겹치게 float 공간만큼 내려옴*/
+
+header{
+    height: 170px;
+}
+
+nav{
+    height: 46px;
+    border-top: 1px solid #f1f3f6;
+    border-bottom: 1px solid #d1dBe4;
+}
+
+.nav-divider{
+    float: left;
+    margin:18px 16px 0;
+    width: 1px;
+    height: 14px;
+    background: #ebeef3;
+}
+
+#search-ranking {
+    position: absolute;
+    top: 184px;
+    right: 100px;
+}
+
+#rank-number{
+    margin-top: -9px;
+    color:#00ab33;
+    font-size:16px;
+
+}
