@@ -1,6 +1,17 @@
 /* 선택자(selector): HTML 태그 선택 */
 
 /* id-> div#아이디명{} */
+
+*{
+    box-sizing: border-box;
+
+
+}
+/* 
+중복을 줄이기 위해 '*' 사용 -> Shift + 8, 모든 태그를 의미
++기본 브라우저 CSS를 없애주는게 좋다. -> css reset
+*/
+
 .blind{
 
     position:absolute;
@@ -55,7 +66,20 @@ div#header-search fieldset{
     height: 49px;
     display: inline-block;
 
-    border:2px solid #03cf5d;
+    border:2px solid #03cf5d; /* 굵기, 색(hex 표기법 -> 구글에 hex color 검색) */
+    box-sizing: border-box; /*항상 보더 기준으로 바꾸기*/
+}
+
+#header-search fieldset input{
+    /* 실제 검색창 */
+    border:none;
+    padding: 0;
+
+    /* input 태그는 파란색 아웃라인이 있음 -> 없애고 싶다?*/
+    outline: none;
+
+    /*형제태그끼리 height가 다르면 높낮이가 다를 수 있다.(정렬 달라짐) */
+
 }
 
 
