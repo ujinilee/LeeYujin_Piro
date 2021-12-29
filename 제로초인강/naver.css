@@ -170,10 +170,12 @@ nav li{
 }
 
 
-nav li:first-child span:first-child{
+nav li:first-child span.nav-item-mail{
     width:25px;
 
     background-position: 0 -285px;
+
+    margin-left: 0;
 
 }
 
@@ -185,6 +187,7 @@ nav li span:first-child {
     background-image: url(./sp_nav.png);
     background-repeat: no-repeat;
 
+    margin-left: 14px;
 
 }
 
