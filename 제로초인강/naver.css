@@ -103,6 +103,14 @@ div#header-search fieldset{
     position:absolute;
     right:-2px;
     top:-2px;
+
+    /*
+    absolute - static 부모찾음
+    버튼을 어디에 붙이고 싶으면 붙이고 싶은 곳을 컨테이닝 블록으로 만들면 된다.
+    ->position이 static만 아니면 된다 -> relative로 변경(absolute가 여기에 붙도록)
+    자신의 컨테이닝 블록이 무엇인지 알아야 그것을 기반으로 위치를 찾을 수 있음
+
+    */
     
 
 }
