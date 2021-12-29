@@ -1,136 +1,141 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" /> <!--meta: 문서에 대한 정보를 나타내는 태그, 문자를 어떻게 처리할 것인지. 한글로-->
-        <!--빈태그일경우, <meta /> 이렇게 끝낼 수 있다. ex. <body /> 열자마자 닫음-->
-        <title>네이버</title>
-        <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
-        <!--href : 파일의 경로, ./:현재폴더-->
-        <link rel="stylesheet" href="./naver.css">
-        <!--css파일과 연결-->
-        <!--rel이 역할 구분-->
-        <!--html 파일이 아이콘, css파일 등을 불러올 수 있어야 한다.-->
-    </head>
-    <body>
-
-
-
-
-
-        <header>
-            <!--<div id="fixed">고정</div>-->
-
-            <div class="center-align"> <!--가운데 정렬용 div-->
-                <!--속성명:속성값, 속성이 여러개일때는 ;(세미콜론)으로 구분-->
-                <!--css 파일을 안만들고 하는 것 -> 인라인 스타일-->
-                <div id="header-top">
-                    <span>네이버를 시작페이지로 > | </span>
-                    <span>쥬니어네이버 | </span>
-                    <span>해피빈</span>
-                </div>
-                
-
-
-                <div id="header-search">
-                    <a href="https://www.naver.com" style="vertical-align: middle;" >
-                        <h1>
-                            <span>네이버</span>
-
-                        </h1>
-                    </a>
-                    <!--<h1>-->
-                        <!--<a href="https://www.naver.com" >네이버</a>-->
-                        <!-- attribute 어떤 태그에 대한 부가정보-->
-                        <!--주석(comment)입니다, 속성(attribute)입니다-->
-                    <!--</h1>-->
-                    <h2 class="blind zerocho babo">검색창</h2> <!--눈에 안보임 cf.blind 속성//스크린 리더에서는 읽힘-->
-                    <fieldset style="vertical-align: middle;">
-                        <legend class="blind">검색</legend>
-                        <input /> <!-- input이 보통 컨텐츠가 없음-->
-
-                        <span id="search-keyboard"></span>
-                        <span id="search-history"></span>
-
-                        <button>
-                            <span class="blind">검색</span>
-                            <span id="search-image"></span> <!--검색용 이미지 따로 두기-->
-                        </button>
-                        <!--버튼은 보여야하고 글자는 안보여야 한다 -->
-                        <!-- 버튼 기본은 손바닥 모양 X(기본동작이 화살표)-->
-                        
-                        <!--checkbox는 여러개 중복 선택 및 취소 가능, radio는 양자택일 or 다중택일-->
-                        <!-- textarea는 긴 글을 쓸 때-->
-                    </fieldset>
-                </div>
-                
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>네이버</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./naver.css">
+  </head>
+  <body>
+    <header>
+      <div class="center-align"> <!-- 가운데 정렬용 div -->
+        <!-- 속성명: 속성값; 속성명2: 속성값2;  -->
+        <!-- 인라인 스타일 -->
+        <div id="header-top">
+          <span>네이버를 시작페이지로 > | </span>
+          <span>쥬니어네이버 | </span>
+          <span>해피빈</span>
+        </div>
+        <div id="header-search">
+          <a href="https://www.naver.com">
+            <h1>
+                <span>네이버</span>
+            </h1>
+          </a>
+          <h2 class="blind">검색창</h2>
+          <fieldset>
+            <legend class="blind">검색</legend>
+            <input />
+            <span id="search-keyboard"></span>
+            <span id="search-history"></span>
+            <button>
+              <span class="blind">검색</span>
+              <span id="search-image"></span>
+            </button>
+          </fieldset>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <div class="center-align relative">
+        <div id="search-ranking">
+          <h2 class="blind">실시간 검색어</h2>
+          <span id="rank-number">1</span>
+          <span id="rank-title">제로초</span>
+        </div>
+        <ul> <!-- unordered list --> <!-- ol 태그도 있어요 ordered list -->
+          <li>
+            <a href="">
+              <span class="nav-item-mail"></span>
+              <span class="blind">메일</span>
+            </a>
+          </li> <!-- list item -->
+          <li><a href=""><span></span><span class="blind">카페</span></a></li> <!-- list item -->
+          <li><a href=""><span></span><span class="blind">블로그</span></a></li> <!-- list item -->
+          <li><a href=""><span></span><span class="blind">지식인</span></a></li> <!-- list item -->
+          <li><a href=""><span></span><span class="blind">네이버쇼핑</span></a></li> <!-- list item -->
+          <li><a href=""><span></span><span class="blind">네이버페이</span></a></li> <!-- list item -->
+          <li><a href=""><span></span><span class="blind">네이버TV</span></a></li> <!-- list item -->
+          <li><a href=""><span></span><span class="blind">사전</span></a></li> <!-- list item -->
+          <li><a href=""><span></span><span class="blind">뉴스</span></a></li> <!-- list item -->
+          <li><a href=""><span></span><span class="blind">증권</span></a></li> <!-- list item -->
+          <li><a href=""><span></span><span class="blind">부동산</span></a></li> <!-- list item -->
+          <li><a href=""><span></span><span class="blind">지도</span></a></li> <!-- list item -->
+          <li><a href=""><span></span><span class="blind">영화</span></a></li> <!-- list item -->
+          <li><a href=""><span></span><span class="blind">뮤직</span></a></li> <!-- list item -->
+          <li><a href=""><span></span><span class="blind">책</span></a></li> <!-- list item -->
+          <li><a href=""><span></span><span class="blind">웹툰</span></a></li> <!-- list item -->
+        </ul>
+        <div class="nav-divider"></div>
+        <ul>
+          <li class="more"><a href=""><span></span><span class="blind">더보기</span></a></li> <!-- list item -->
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="center-align">
+          <div>
+            <div id="main-ad"></div>
+            <div id="main-login">
+                <h3>로그인</h3>
             </div>
-        </header>
+      </div>
 
-        <nav>
-            <div class="center-align relative">
-                <div id="search-ranking">
-                  <h2 class="blind">실시간 검색어</h2>
-                  <span id="rank-number">1</span>
-                  <span>제로초</span>
-                </div>
-
-                <ul> <!--unordered list, ol 이면 숫자 1, 2, 3, 4 .. 로 바뀜-->
-                    <li>
-                        <a href>
-                            <span class="nav-item-mail"></span>
-                            <span class="blind">메일</span>
-                        </a>
-                    </li> <!-- list item-->
-                    <li><a href=""><span></span><span class="blind">카페</span></a></li>
-                    <li><a href=""><span></span><span class="blind">블로그</span></a></li>
-                    <li><a href=""><span></span><span class="blind">지식인</span></a></li>
-                    <li><a href=""><span></span><span class="blind">쇼핑</span></a></li>
-                    <li><a href=""><span></span><span class="blind">네이버페이</span></a></li>
-                    <li><a href=""><span></span><span class="blind">네이버쇼핑</span></a></li>
-                    
-                </ul>
-                <div class="nav-divider"></div>
-
-                <ul>
-                    <li><a href=""><span></span><span class="blind">더보기</span></a></li>
-                </ul>
-
-            </div>
-        </nav>
-
-
-        <main>
+      <div>
+          <div id="main-ytn">
             <h3>연합뉴스</h3>
             <ol>
-                <li>충격) 제로초 지금 목 아파..</li>
-                <li>속보) 제로초 지금 목 아파..</li>
-                <li>중대발표) 제로초 지금 목 아파..</li>
+              <li>충격) 제로초 지금 목아파...</li>
+              <li>속보) 방송 종료하고 싶어</li>
+              <li>중대발표: 다음 강좌 언제 될지 모르겠다</li>
             </ol>
+          </div>
+          <div id="main-newstand">
             <h3>언론사 목록</h3>
             <ul>
-                <li><img src="./연합뉴스TV.png " alt="연합뉴스TV" /></li>
-                <!--이미지 설명은 alt="" 에 -->
-                <li><img src="./osen.png " alt="osen" /></li>
+              <li><img src="./과학동아.png" alt="과학동아" /></li>
+              <li><img src="./한국일보.png" alt="한국일보" /></li>
+              <li><img src="./osen.png" alt="osen" /></li>
+              <li><img src="./매일경제.png" alt="매일경제" /></li>
+              <li><img src="./파이낸셜뉴스.png" alt="파이낸셜뉴스" /></li>
+              <li><img src="./한국경제TV.png" alt="한국경제TV" /></li>
+              <li><img src="./과학동아.png" alt="과학동아" /></li>
+              <li><img src="./한국일보.png" alt="한국일보" /></li>
+              <li><img src="./osen.png" alt="osen" /></li>
+              <li><img src="./매일경제.png" alt="매일경제" /></li>
+              <li><img src="./파이낸셜뉴스.png" alt="파이낸셜뉴스" /></li>
+              <li><img src="./한국경제TV.png" alt="한국경제TV" /></li>
+              <li><img src="./과학동아.png" alt="과학동아" /></li>
+              <li><img src="./한국일보.png" alt="한국일보" /></li>
+              <li><img src="./osen.png" alt="osen" /></li>
+              <li><img src="./매일경제.png" alt="매일경제" /></li>
+              <li><img src="./파이낸셜뉴스.png" alt="파이낸셜뉴스" /></li>
+              <li><img src="./한국경제TV.png" alt="한국경제TV" /></li>
             </ul>
-            <h3>로그인</h3>
-            <h3>뉴스</h3>
-            <h3>법률</h3>
-            <h3>쇼핑</h3>
-            <h6>쇼핑</h6>
-            <!-- 크롭 웹스토어 -> headingsMap에서 h1부터 태그(키워드) 확인 가능-->
-        </main>
+          </div>
+          <div id="main-weather"></div>
+          <div id="main-second-ad"></div>
+      </div>
 
-        <footer>
-            <div>공지사항</div>
-            <div>Creators</div>
-            <div>회사소개</div>
+      <div>
+          <h3>주제별 보기</h3>
+          <h3>쇼핑</h3>
+      </div>
 
-        </footer>
-        
-        <!--div를 구별해주기 위해 id를 붙여주기도 했음-->
-        <!--요즘엔 대신 header, nav, main, footer 사용-->
-        <!--큰 부분 Header, 메뉴 나열 nav, main 컨텐츠 부분 main, 부가적인 정보들 footer-->
-        <!--어떤 구역인지 알려주기 위한 역할을 하는 div에 이름 붙은 태그가 있다.-->
-        <!--시멘트 태그는 제약 O -> validity document 라는 확장 프로그램을 쓰면 제대로 코딩을 했는지 확인 해줌-->
-    </body>
+      <div>
+          <div>
+            <h3>이벤트</h3>
+          </div>
+          <div id="main-third-ad"></div>
+      </div>
+    
+
+      </div>
+    </main>
+    <footer>
+      <div>공지사항</div>
+      <div>Creators</div>
+      <div>회사소개</div>
+    </footer>
+  </body>
 </html>
