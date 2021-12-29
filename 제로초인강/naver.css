@@ -129,8 +129,22 @@ div#header-search fieldset{
 
 }
 
+html, body{
+    margin:0;
+    padding:0;
+} /*초기화, 화면에 딱 붙음*/
 
 
+#fixed{
+    position:fixed;
+    top:50px;
+    right:50px;
+    display: inline-block;
+    width: 100px;
+    height:100px;
+    border:1px solid black;
+    border-radius: 50px;
+}
 /* 
 ,(콤마)로 여러태그에 적용가능 ex. , div#zerocho
 div 생략 가능
