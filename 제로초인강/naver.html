@@ -15,7 +15,7 @@
         <header>
             <div id="fixed">고정</div>
 
-            <div id="header-center"> <!--가운데 정렬용 div-->
+            <div class="center-align"> <!--가운데 정렬용 div-->
                 <!--속성명:속성값, 속성이 여러개일때는 ;(세미콜론)으로 구분-->
                 <!--css 파일을 안만들고 하는 것 -> 인라인 스타일-->
                 <div>
@@ -58,14 +58,22 @@
         </header>
 
         <nav>
-            <ul> <!--unordered list, ol 이면 숫자 1, 2, 3, 4 .. 로 바뀜-->
-                <li>메일</li> <!-- list item-->
-                <li>카페</li>
-                <li>블로그</li>
-                <li>지식인</li>
-                <li>쇼핑</li>
-                <li>네이버페이</li>
-            </ul>
+            <div class="center-align">
+                <ul> <!--unordered list, ol 이면 숫자 1, 2, 3, 4 .. 로 바뀜-->
+                    <li>
+                        <a href>
+                            <span></span>
+                            <span class="blind">메일</span>
+                        </a>
+                    </li> <!-- list item-->
+                    <li><a href=""><span></span><span class="blind">카페</span></a></li>
+                    <li><a href=""><span></span><span class="blind">블로그</span></a></li>
+                    <li><a href=""><span></span><span class="blind">지식인</span></a></li>
+                    <li><a href=""><span></span><span class="blind">쇼핑</span></a></li>
+                    <li><a href=""><span></span><span class="blind">네이버페이</span></a></li>
+                    <li><a href=""><span></span><span class="blind">네이버쇼핑</span></a></li>
+                </ul>
+            </div>
         </nav>
 
 

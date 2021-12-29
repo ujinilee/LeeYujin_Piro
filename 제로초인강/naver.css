@@ -23,7 +23,7 @@
 
 }
 
-div#header-center{
+.center-align{
     margin:0 auto; 
     width: 1080px;
 }
@@ -157,3 +157,69 @@ px: 상대적인 길이 모니터의 가로 길이를 1080등분
     자식을 선택할때 '>' 사용
     header-center h1 // 한칸 띄워 쓰면 '자손'선택자
 */
+
+nav ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+nav li{
+    display:inline-block;
+
+}
+
+
+nav li:first-child span:first-child{
+    width:25px;
+
+    background-position: 0 -285px;
+
+}
+
+/*공통적인거 뽑아주기*/
+nav li span:first-child {
+
+    height: 16px;
+    display: inline-block; /*span이니까 display를 inline-block*/
+    background-image: url(./sp_nav.png);
+    background-repeat: no-repeat;
+
+
+}
+
+
+nav li:nth-child(2) span:first-child{
+    width: 27px;
+
+    background-position:-279px -52px;
+
+}
+
+nav li:nth-child(3) span:first-child{
+    width: 40px;
+
+    background-position:-100px -182px;
+
+} /*그럼 width랑 background position만 남음*/
+
+nav li:nth-child(4) span:first-child{
+    width: 40px;
+
+    background-position:-101px -156px;
+
+}
+
+nav li:nth-child(5) span:first-child{
+    width: 26px;
+
+    background-position:-279px -156px;
+
+}
+
+nav li:nth-child(6) span:first-child{
+    width: 25px;
+
+    background-position:-70px -285px;
+
+}
