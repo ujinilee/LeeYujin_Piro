@@ -5,25 +5,309 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="Bootstrap.css" />
+    <!--내가 재정의한 css가 먼저 먹힐려면 ~min.css 아래에 위치해야함-->
+
+
 
 </head>
-<body>
+<body  style="overflow-x:hidden; overflow-y:auto;">
+
+
     <header>
+
+
+        <nav id="boot_nav" class="navbar fixed-top navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand boot_nav_txt_color1" href="#">Pirogramming</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a id="boot_nav_txt_color2"class="nav-link mx-5 active" aria-current="page" href="#">Yujin Lee</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#Intro">Intro</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-secondary" href="#highlights">Highlights</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-secondary" href="#gallery">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-secondary" href="#contact">Contact</a>
+                  </li>
+                </ul>
+                <button id="boot_nav_btn" class="btn btn-outline" data-bs-toggle="modal" data-bs-target="#exampleModal1">About</button>
+              </div>
+            </div>
+          </nav>
+
+            <!-- Modal -->
+          <div class="modal fade" id="exampleModal1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">피로그래밍 16기</h5>
+                            </div>
+                            <div class="modal-body">
+                                파이팅!!
+                                즐거운 부트스트랩^^
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
 
 
     </header>
 
 
     <main>
-        <h1>Pirogramming 16</h1>
-        <h2>Cheer up</h2>
-        <hr />
+        <!--1-->
+        <div class="main_num01">
+            <div class="p-3 mb-2 text-center">
+                <h1 class="pt-5">Pirogramming 16</h1>
+                <h2>Cheer up</h2>
+                <h3>_______________________________________________________________________________</h3>
+                <button type="button" class="btn btn-primary">Get Started</button>
+            </div>
+        </div>
+
+
+        <!--2-->
+        <div id=Intro class="main_num02">
+            <div class="p-3 mb-2 text-center">
+                <h2 class="main_num02_font pt-5">Built On The Bootstrap Grid</h1>
+                <h6>
+                    <h6 class="main_num02_font2">Bootstrap's responsive grid comes in 4sizer or "breakpoints":tiny (xs).</h6>
+                    <h6 class="main_num02_font2">small(sm), medium(md) and large(lg). These 4 grid sizes enables you create</h6>
+                    <h6 class="main_num02_font2">responsive layouts that behave according on different sizes.</h6>
+                </h6>
+                <button type="button" class="btn main_btn2 btn-primary">Learn More</button>
+            </div> 
+
+        </div>
+
+        <!--3-->
+
+        <div id=highlights class="main_num03_set">
+
+            <div>
+                <h5 class="main_num03_title text-info text-center">Flexible Layouts</h5>
+    
+            </div>
+            <div class="main_num03_set02 row row-cols-1 row-cols-md-3 g-3">
+                <div class="icon_img1">
+                    <img src="img/icon1.png" class="main_num3_img1 imageSet" />
+                    <h3 class="text-center text-white">Responsive</h3>
+                    <h6 class="text-center text-white">Your site looks good everywhere</h6>
+                </div>
+                
+                <div class="icon_img1"> 
+                    <img src="img/icon2.png" class="main_num3_img2 imageSet" />
+                    <h3 class="text-center text-white">Customizable</h3>
+                    <h6 class="text-center text-white">Easy to theme and customize with SASS</h6>
+                </div>
+
+                <div class="icon_img1"> 
+                    <img src="img/icon3.png" class="main_num3_img3 imageSet" />
+                    <h3 class="text-center text-white">Consistent</h3>
+                    <h6 class="text-center text-white">A mature, well-tested, stable codebase</h6>
+                </div>
+
+
+                
+            </div>
+
+
+        </div>
+
+        <!--4-->
+        <div id=gallery class="num04_bg_color album py-5">
+            <div class="container">
+        
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="num04_margin col">
+                  <div class="card_bg card shadow-sm">
+                    <img src="img/photo1.png" />
+        
+                    
+                  </div>
+                </div>
+                <div class="num04_margin col">
+                  <div class="card_bg card shadow-sm">
+                    <img src="img/photo2.png" />        
+                    
+                  </div>
+                </div>
+                <div class="num04_margin col">
+                  <div class="card_bg card shadow-sm">
+                    <img src="img/photo3.png" />        
+                    
+                  </div>
+                </div>
+        
+                <div class="num04_margin col">
+                  <div class="card_bg card shadow-sm">
+                    <img src="img/photo4.png" />        
+                 
+                  </div>
+                </div>
+                <div class="num04_margin col">
+                  <div class="card_bg card shadow-sm">
+                    <img src="img/photo5.png" />        
+                  </div>
+                </div>
+                <div class="num04_margin col">
+                  <div class="card_bg card shadow-sm">
+                    <img src="img/photo6.png" />    
+                  </div>
+                </div>
+        
+                
+                
+                
+              </div>
+            </div>
+          </div>
+
+
+
+        <!--5-->
+        <div id=contact class="num05_size">
+            <form class="form01 row">
+
+                <div>
+                    <h5 class="main_num05_title text-info text-center">Get in Touch</h5>
+        
+                </div>
+                <div class="text-center">________________________________________________________________________________________________</div>
+    
+                <div class="main_num5_txt text-center">We love your feedback. Fill out the form below and we'll get back to you as soon as possible</div>
+    
+                <div class="mb-3">
+    
+                    <div class="row">
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="Name" aria-label="Name">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Phone" aria-label="Phone">
+                          </div>
+                      </div>
+    
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label"></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your message here.."></textarea>
+                </div>
+    
+                <div class="num05_btn col-3">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal_01">Send</button>
+
+                    <div class="modal fade" id="exampleModal_01">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Nice Job!</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Nice Job!
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+
 
     </main>
 
 
     <footer>
+        <div class="footer_set">
+            <div class="row footer_div1">
+                <div class="footer_div2 col-2">
+                    <h5 class="footer_font1">Information</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a class="footer_font2 nav-link p-0 text muted">Products</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a class="footer_font2 nav-link p-0 text muted">Services</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a class="footer_font2 nav-link p-0 text muted">Benefits</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a class="footer_font2 nav-link p-0 text muted">Developers</a>
+                        </li>
+    
+    
+                    </ul>
+    
+                </div>
+    
+                <div class="footer_div2 col-2">
+                    <h5 class="footer_font1">About</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a  class="footer_font2 nav-link p-0 text muted">Contact Us</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a  class="footer_font2 nav-link p-0 text muted">Delivery Information</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a class="footer_font2 nav-link p-0 text muted">Privacy Policy</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a class="footer_font2 nav-link p-0 text muted">Terms & Conditions</a>
+                        </li>
+    
+                    </ul>
+    
+                </div>
+    
+                <div class="footer_div2 col-4 offeset-1">
+                    <form>
+                        <h5 class="footer_font1">Stay Posted</h5>
+    
+                        <div class="d-flex w-100 gap-2">
+                            <input id="newletter" type="text" class="form-control" placeholder="Tell us your email" />
+                        </div>
+                        <div>
+                            <button type="button" class="footer_btn1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal_01">Subscribe for updates</button>
+
+                        </div>
+                    </form>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+        <div class="footer_set2 d-felx justify-content-between">
+            <p class="footer_font3">Bootstrap @ 2021 Pirogramming16</p>
+        </div>
+        
+
+
 
     </footer>
     

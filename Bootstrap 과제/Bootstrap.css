@@ -1,1 +1,222 @@
-@import ".reset.css";
+/*about btn 색*/
+#boot_nav_btn{
+    color:cadetblue;
+    border-color: cadetblue;
+}
+
+#boot_nav_btn:hover{
+    color:white;
+    background-color: cadetblue;
+}
+
+/*nav 바 배경 색*/
+#boot_nav{
+    background-color: rgb(63, 63, 63);
+}
+
+/*pirogramming*/
+.boot_nav_txt_color1{
+    color:white;
+}
+
+.boot_nav_txt_color1:hover{
+    color:white;
+}
+
+
+/*Yujin Lee*/
+#boot_nav_txt_color2{
+    color:cadetblue;
+}
+/*토클러 색 재정의*/
+.navbar-toggler{
+    background-color:rgba(255, 255, 255, 0.5);
+}
+
+/*첫번째 섹션 div 정의*/
+.main_num01{
+    width:100%;
+    height:750px;
+    padding-top:220px;
+}
+
+/*Learn More 버튼 정의*/
+.main_btn2{
+
+    background-color: white;
+    color:black;
+    font-weight: 600;
+    border-color: black;
+    margin-top: 20px;
+
+
+}
+
+/*두번째 섹션 div 정의*/
+.main_num02{
+    width:100%;
+    height:750px;
+    padding-top:220px;
+    background-color: rgb(84, 88, 97);
+
+}
+
+/*제목 색상*/
+.main_num02_font{
+    font-weight: 600;
+    color:red;
+    margin-bottom: 20px;
+}
+
+/*본문 색상*/
+.main_num02_font2{
+    color:white;
+}
+
+
+
+/*footer*/
+.footer_font1{
+    color:cadetblue;
+    font-weight: 600;
+
+}
+
+.footer_font2{
+    color:white;
+
+}
+
+.footer_font3{
+    color:rgb(196, 196, 196);
+
+}
+
+.footer_set{
+    width: 100%;
+    background-color: rgb(71, 71, 71);
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_set2{
+    width: 100%;
+    height:100%;
+    background-color: rgb(71, 71, 71);
+    /*밑에 공간이 남았는데 이걸로 해결*/
+    display: flex;
+    flex-wrap: wrap;
+    padding-left:20px;
+
+}
+
+.footer_div1{
+    width:100%;
+    height:200px;
+    padding-left:20px;
+    padding-right:20px ;
+    padding-top:20px;
+}
+
+.footer_btn1{
+    margin-top:10px;
+    border-radius: 5px;
+}
+
+.footer_div2{
+    margin-right:90px;
+    margin-left:70px;
+
+}
+
+/*---Flexible Layouts---*/
+
+
+.main_num03_set{
+    background-color: rgb(71, 71, 71);
+
+}
+
+.main_num03_title{
+
+    padding-top:50px;
+    padding-bottom: 30px;
+}
+
+.imageSet{
+    width:200px;
+    height:200px;
+    object-fit: fill;
+    padding:20px;
+    margin:50px;
+}
+
+
+.main_num03_set02{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+h5{
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+.main_num3_img1{
+    margin-left:150px;
+}
+
+.main_num3_img2{
+    margin-left:150px;
+}
+
+.main_num3_img3{
+    margin-left:150px;
+}
+
+/*form*/
+.form01{
+    height:500px;
+    background-color: rgb(84, 88, 97);
+    padding-left:150px;
+    padding-right:150px;
+
+}
+
+.main_num5_txt{
+    margin-bottom: 30px;
+}
+
+.main_num05_title{
+    padding-top:50px;
+    
+}
+
+.num05_btn{
+    
+    margin-left:570px;
+
+}
+
+.num05_size{
+    width:100%;
+
+}
+
+.btn05_pad{
+    padding-left:10px;
+}
+
+.num04_margin{
+    margin:0;
+}
+
+.num04_bg_color{
+    background-color: rgb(71, 71, 71);
+}
+
+.card_bg{
+    background-color: rgba(255, 255, 255, 0);
+}
