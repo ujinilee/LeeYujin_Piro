@@ -8,4 +8,5 @@ while(1):
     elif(int(num)!=1 and int(num)!=2 and int(num)!=3):
         print("1,2,3 중 하나를 입력하세요")    
     else:
-        break
+        for i in range(1,int(num)+1):
+            print('playerA : ',i)
