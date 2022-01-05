@@ -14,6 +14,7 @@ while(score!=31):
                 score+=1
                 if(score==31):
                     print('playerA : ',score)
+                    print("playerB win!")
                     break
                 print('playerA : ',score)
             break
@@ -33,6 +34,7 @@ while(score!=31):
                 score+=1
                 if(score==31):
                     print('playerB : ',score)
+                    print("playerA win!")
                     break
                 print('playerB : ',score)
             break
