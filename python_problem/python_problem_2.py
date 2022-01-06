@@ -142,10 +142,14 @@ while(1):
         #Menu4(name)
         
         try:
-            name=input("Delete name : ")
-            Menu4(name)
+            
             if(len(student)==0):
                 raise isExistData
+            
+            else:
+                name=input("Delete name : ")
+                Menu4(name)
+                
             
         except KeyError:
             print("Not exist name!")
