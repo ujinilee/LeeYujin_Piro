@@ -116,11 +116,12 @@ while(1):
         #Menu2()
         #print("Grading to all students.")
         try:
-            Menu2()
+            
             if(len(student)==0):
                 raise isExistData
             else:
                 print("Grading to all students.")
+                Menu2()
             
         except isExistData:
             print("No student data!")
