@@ -96,6 +96,9 @@ while(1):
             if(mid.isnumeric()!=True or final.isnumeric()!=True):
                 raise isInt
             
+            if(name in student) == True:
+                raise isExistStu
+            
             else:
                 Menu1(name,mid,final)
             #if (name in student) == True:
