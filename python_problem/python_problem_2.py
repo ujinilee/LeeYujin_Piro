@@ -73,7 +73,7 @@ def Menu3():
 def Menu4(name):
     student.pop(name)
     print(name,"student information is deleted")
-    print(student)
+    #print(student)
     
 
 
