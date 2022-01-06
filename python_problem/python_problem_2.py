@@ -91,11 +91,13 @@ while(1):
     if choice == "1":
         try:
             name, mid, final=input("Enter name mid-score final-score : ").split(" ")
-            Menu1(name,mid,final)
+            
             
             if(mid.isnumeric()!=True or final.isnumeric()!=True):
                 raise isInt
             
+            else:
+                Menu1(name,mid,final)
             #if (name in student) == True:
             #if(name in student == True):
                 #raise isExistStu
