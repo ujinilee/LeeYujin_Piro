@@ -16,7 +16,8 @@ function addButton(){
     const tr=document.createElement('tr');
     const input=document.createElement('input')
     input.setAttribute('type','checkbox');
-    input.setAttribute('class','checkbtn') //세팅
+    input.setAttribute('class','checkbtn');
+    tr.setAttribute('class','fontColor2'); //세팅
 
     const td=document.createElement('td');
     td.appendChild(input);

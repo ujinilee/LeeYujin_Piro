@@ -1,0 +1,92 @@
+.styleBtn{
+    color:white;
+    background-color: rgb(115, 211, 255);
+    border: 1px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: small;
+    display: inline-block;
+
+}
+
+.styleDiv{
+    text-align: center;
+}
+
+.styleDiv2{
+    display: inline-block;
+}
+
+.addText{
+    width: 270px;
+    height:32px;
+    border-style:solid;
+    border-color: rgb(115, 211, 255);
+    border-radius: 5px;
+    outline: none;
+    margin-right: 10px;
+    padding-left:10px;
+
+
+}
+
+.divAll{
+    width: 500px;
+    height: 500px;
+}
+
+thead{
+    height:30px;
+    background-color: rgb(115, 211, 255);
+    text-align: left;
+}
+
+thead :first-child{
+
+    width: 22px;
+
+}
+
+thead :nth-child(2){
+
+    width: 330px;
+}
+
+tbody{
+    height:30px;
+    text-align: left;
+}
+
+tbody :first-child{
+
+    width: 22px;
+
+}
+
+tbody :nth-child(2){
+
+    width: 330px;
+}
+
+table{
+    margin-top:10px;
+    margin-bottom: 10px;
+    
+}
+
+.fontColor1{
+    color:white;
+    padding-left:8px;
+
+}
+
+.fontColor2{
+    color:rgb(115, 211, 255);
+}
+
+body{
+    margin-top:200px;
+}

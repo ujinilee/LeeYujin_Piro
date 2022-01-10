@@ -5,39 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
+    <link rel="stylesheet" href="todo.css">
 </head>
 <body>
-    <h3>피로그래밍 과제 리스트</h3>
+    
+    <h3 class="styleDiv fontColor2">피로그래밍 과제 리스트</h3>
 
-    <div>
+    <div class="styleDiv">
         <input type="text" class="addText">
-        <button type="button" id="addButton">추가</button>
+        <button type="button" id="addButton" class="styleBtn">추가</button>
     </div>
 
-    <table>
+    <div class="styleDiv">
 
-        <thead>
-            <tr>
-                <th>
-                    <input type="checkbox" checked>
-                </th>
-                <th>오늘 할 과제</th>
+        <table class="styleDiv2">
 
-            </tr>
-        </thead>
+            <thead>
+                <tr>
+                    <th>
+                        <input type="checkbox" checked>
+                    </th>
+                    <th class="fontColor1">오늘 할 과제</th>
+    
+                </tr>
+            </thead>
+    
+            <tbody id="tableList">
+    
+            </tbody>
+    
+    
+        </table>
 
-        <tbody id="tableList">
+    </div>
+    
 
-        </tbody>
-
-
-    </table>
-
-
-    <div>
-        <button type="button" id="removePart">선택 과제 삭제</button>
-        <button type="button" id="removeLast">마지막 과제 삭제</button>
-        <button type="button" id="removeAll">전체 삭제</button>
+    <div class="styleDiv">
+        <button type="button" id="removePart" class="styleBtn">선택 과제 삭제</button>
+        <button type="button" id="removeLast" class="styleBtn">마지막 과제 삭제</button>
+        <button type="button" id="removeAll" class="styleBtn">전체 삭제</button>
     </div>
 
     <script src="todo.js"></script>
