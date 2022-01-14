@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>상세 정보</title>
+  </head>
+
+  <body> <!--제목, 개봉년도, 감독, 주연, 장르, 별점, 러닝타임, 리뷰, 수정, 삭제-->
+
+    <a href="{% url 'review:review_list' %}">my Movie reviews</a> <br />
+
+    <h1>{{ review.movie_title }}</h1>
+    <h3> 개봉년도 {{ review.release_date }}</h3>
+    <h3> 감독 {{ review.director }}</h3>
+    <h3> 주연 {{ review.character }}</h3>
+    <h3> 장르 {{ review.genre }}</h3>
+    <h3> 별점 {{ review.score }}</h3>
+    <h3> 러닝타임 {{ review.running_time }}</h3>
+    <h3> {{ review.review_text }}</h3>
+
+    
+    <p>{{ review.content | linebreaksbr }}</p>
+    <p>{{ review.created_at }}</p>
+    <p>{{ review.updated_at }}</p>
+
+    <a href="{% url 'review:update' review.id %}">수정</a> <br />
+    <a href="{% url 'review:delete' review.id %}">삭제</a> <br />
+
+
+
+  </body>
+</html>
