@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWIDEA</title>
+</head>
+<body>
+    <nav>
+        <a href="{% url 'swidea:idea_list' %}">My SW Idea Manage</a>
+        <a href="{% url 'swidea:idea_new'%}">아이디어 등록</a>
+        <a href="#">아이디어 관리</a> 
+        <a href="#">개발툴 등록</a>
+        <a href="#">개발툴 관리</a>
+    </nav>
+
+    <div>
+        {% block content %}
+        {% endblock %}
+        
+    </div>
+    
+</body>
+</html>

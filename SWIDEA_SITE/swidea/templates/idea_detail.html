@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div>
+    <h4>Idea Detail</h4>
+    <h3>아이디어 세부내용 페이지 입니다.</h3>
+</div>
+
+<div>
+    <h2>{{swidea.idea_name}}</h2>
+    <div class=list-poster>
+        {% if swidea.image %}
+            <img src="{{swidea.image.url}}" height="300" width="300">
+        {% else %}
+        <img src="https://picsum.photos/seed/{{swidea.id}}/300/300?">
+        {% endif %}
+    </div>
+    <h2>1) 아이디어 관심도: </h2>
+    <h2>{{swidea.idea_like}}</h2>
+    <h2>2) 예상 개발 툴:</h2>
+    <h2>{{swidea.devtool}}</h2>
+    <h2>3) 아이디어 설명: </h2>
+    <h2>{{swidea.idea_content}}</h2>
+</div>
+
+
+{% endblock %}

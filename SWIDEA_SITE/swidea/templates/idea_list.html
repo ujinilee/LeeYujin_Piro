@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    {%for swidea in swideas %}
+    <div>
+
+        <div class=list-poster>
+            {% if swidea.idea_image %}
+                <img src="{{swidea.idea_image.url}}" height="300" width="300">
+            {% else %}
+            <img src="https://picsum.photos/seed/{{swidea.id}}/300/300?">
+            {% endif %}
+        </div>
+        <h1><a href="{% url 'swidea:idea_detail' pk=swidea.pk %}">{{swidea.idea_name}}</a></h1>
+        <h6>예상 개발툴 : {{swidea.devtool}}</h6>
+        <h6>아이디어 관심도 : {{swidea.idea_like}}</h6>
+
+    </div>
+
+
+
+    {% endfor %}
+
+{% endblock %}
