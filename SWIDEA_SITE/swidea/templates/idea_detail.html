@@ -23,5 +23,11 @@
     <h2>{{swidea.idea_content}}</h2>
 </div>
 
+<h2><a href="{% url 'swidea:idea_edit' pk=swidea.pk %}">수정</a></h2>
+<h2><a href="{% url 'swidea:idea_delete' swidea.id %}">삭제</a></h2>
+<h2><a href="{% url 'swidea:idea_list' %}">목록</a></h2>
+
+
+
 
 {% endblock %}
