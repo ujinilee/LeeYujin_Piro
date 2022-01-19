@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    {%for swidea in swideas %}
+    <div>
+
+        <h1><a href="#">{{swidea.dev_name}}</a></h1>
+        <h6>예상 개발툴 : {{swidea.dev_type}}</h6>
+        <h6>아이디어 관심도 : {{swidea.dev_content}}</h6>
+
+    </div>
+
+
+    {% endfor %}
+
+{% endblock %}

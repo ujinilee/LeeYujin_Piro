@@ -9,8 +9,8 @@
 <div>
     <h2>{{swidea.idea_name}}</h2>
     <div class=list-poster>
-        {% if swidea.image %}
-            <img src="{{swidea.image.url}}" height="300" width="300">
+        {% if swidea.idea_image %}
+            <img src="{{swidea.idea_image.url}}" height="300" width="300">
         {% else %}
         <img src="https://picsum.photos/seed/{{swidea.id}}/300/300?">
         {% endif %}

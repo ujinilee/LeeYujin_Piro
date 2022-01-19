@@ -52,3 +52,12 @@ def idea_delete(request,pk):
     swidea = get_object_or_404(Idea, id=pk)
     swidea.delete()
     return redirect('swidea:idea_list')
+
+
+
+def dev_list(request):
+
+    swideas = Devtool.objects.all()
+    ctx = {'swideas': swideas}
+
+    return render(request, template_name='dev_list.html', context=ctx)
