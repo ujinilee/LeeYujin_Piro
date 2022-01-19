@@ -16,9 +16,9 @@ def idea_list(request):
 
 def idea_detail(request,pk):
     swidea=Idea.objects.get(id=pk)
-    ctx = {'swidea': swidea}
+    dev=swidea.devtool ##
+    ctx = {'swidea': swidea, 'dev':dev}
     return render(request, 'idea_detail.html',context=ctx)
-
 
 
     
@@ -108,3 +108,4 @@ def dev_delete(request,pk):
     swidea = get_object_or_404(Devtool, id=pk)
     swidea.delete()
     return redirect('swidea:dev_list')
+

@@ -18,7 +18,7 @@
     <h2>1) 아이디어 관심도: </h2>
     <h2>{{swidea.idea_like}}</h2>
     <h2>2) 예상 개발 툴:</h2>
-    <h2>{{swidea.devtool}}</h2>
+    <h2><a href="{% url 'swidea:dev_detail' pk=dev.pk %}">{{swidea.devtool}}</a></h2> <!--dev로넘겨-->
     <h2>3) 아이디어 설명: </h2>
     <h2>{{swidea.idea_content}}</h2>
 </div>
