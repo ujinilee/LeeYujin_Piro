@@ -6,6 +6,11 @@ app_name='swidea'
 
 urlpatterns=[
     path('',views.idea_list,name="idea_list"), #리스트 페이지
+
+    path('plus_interest/', views.plus_interest, name="plus_interest"), ###AJAX
+    path('minus_interest/', views.minus_interest, name="minus_interest"), ###AJAX
+
+
     path('<int:pk>/',views.idea_detail,name='idea_detail'), #디테일페이지
 
     path('new/', views.idea_new, name='idea_new'), #생성

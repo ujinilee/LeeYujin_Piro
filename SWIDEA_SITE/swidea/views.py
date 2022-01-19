@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Devtool, Idea
 from .forms import IdeaForm, DevtoolForm
+from django.http import JsonResponse ####AJAX
 
 # Create your views here.
 
@@ -11,6 +12,26 @@ def idea_list(request):
 
     return render(request, template_name='idea_list.html', context=ctx)
 
+#######AJAX##########
+def plus_interest(request):
+    pk = request.POST.get('pk', None)
+    idea = get_object_or_404(Idea, pk=pk)
+    idea.idea_like += 1
+    #print(idea.interest)
+    idea.save()
+    context = {'plus_interest': idea.idea_like}
+    return JsonResponse(context)
+
+
+def minus_interest(request):
+    pk = request.POST.get('pk', None)
+    idea = get_object_or_404(Idea, pk=pk)
+    idea.idea_like -= 1
+    #print(idea.interest)
+    idea.save()
+    context = {'minus_interest': idea.idea_like}
+    return JsonResponse(context)
+#######AJAX##########
 
 
 
