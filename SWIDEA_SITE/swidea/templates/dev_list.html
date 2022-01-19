@@ -5,9 +5,9 @@
     {%for swidea in swideas %}
     <div>
 
-        <h1><a href="#">{{swidea.dev_name}}</a></h1>
-        <h6>예상 개발툴 : {{swidea.dev_type}}</h6>
-        <h6>아이디어 관심도 : {{swidea.dev_content}}</h6>
+        <h1><a href="{% url 'swidea:dev_detail' pk=swidea.pk %}">{{swidea.dev_name}}</a></h1>
+        <h3>{{swidea.dev_type}}</h3>
+        <h5>{{swidea.dev_content}}</h5>
 
     </div>
 

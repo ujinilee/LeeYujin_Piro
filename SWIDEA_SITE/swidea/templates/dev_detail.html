@@ -2,22 +2,30 @@
 {% block content %}
 
 <div>
-    <h4>Dev tool Detail</h4>
-    <h3>개발자 세부내용 페이지 입니다.</h3>
+    <h2>Devtool Detail</h2>
+    <h6>개발툴 세부내용 페이지 입니다.</h6>
 </div>
 
 <div>
     <h2>{{swidea.dev_name}}</h2>
-    <h2>1)</h2>
     <h2>{{swidea.dev_type}}</h2>
-    <h2>2)</h2>
-    <h2>{{swidea.dev_type}}</h2>
+    <h2>{{swidea.dev_content}}</h2>
 
 </div>
 
-<h2><a href="#">수정</a></h2>
-<h2><a href="#">삭제</a></h2>
-<h2><a href="#">목록</a></h2>
+<div>
+    <h3>만들 수 있는 SW 목록</h3>
+
+    {%for idea in ideas %}
+    <div class="list-review">
+        <p><span class="list-content"><a href="{% url 'swidea:idea_detail' idea.id %}">{{ idea.idea_name }}</a></span></p>
+    </div>
+    {% endfor %}                             
+
+</div>
+<h2><a href="{% url 'swidea:dev_edit' pk=swidea.pk %}">수정</a></h2>
+<h2><a href="{% url 'swidea:dev_list' %}">삭제</a></h2>
+<h2><a href="{% url 'swidea:dev_list' %}">목록</a></h2>
 
 
 {% endblock %}
